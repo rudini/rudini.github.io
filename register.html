@@ -44,6 +44,10 @@
       float: right;
     }
 
+    .smarcom-input {
+      background-image: linear-gradient(0deg, #f68a1e 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0);
+    }
+
     .btn-raised {
       background-color: #f68a1e !important;
       color: white;
@@ -53,8 +57,8 @@
   </style>
 </head>
 
-<body id="smarcompay">
-  <nav id="g" class="navbar navbar-expand-md p-0 bg-primary">
+<body class="smarcompay">
+  <nav class="navbar navbar-expand-md p-0 bg-primary" id="g">
     <div class="container d-flex flex-row justify-content-center">
       <a class="navbar-brand" href="#" style="margin: 0; padding: 0">
         <img src="/assets/logo_smarpay.svg" alt="smarcom pay" class=""> </a>
@@ -64,25 +68,31 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="card">
-            <img class="card-img-top" src="/assets/automat.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p> Bern-Hauptbahnhof
-                  <br> 3000 Bern
-                  <br> AUF WELLE</p>
-              </h5>
-              <p class="card-text">Automatennummer 282370</p>
-              <a class="btn btn-primary btn-raised" href="/register.html">Jetzt kaufen!</a>
-            </div>
-          </div>
+          <p class="lead m-0">Dein erster Einkauf?</p>
+          <p class="text-muted">Bitte verifiziere deine Telefonnummer</p>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="">
+            <div class="form-group">
+              <label>Telefonnummer</label>
+              <input type="phone" class="form-control smarcom-input" placeholder="079 555 55 55">
+              <small class="form-text text-muted">Wir werden deine Telefonnummer nie mit anderen teilen</small>
+              <a class="btn btn-primary btn-raised my-3" href="register2.html">Verifizieren</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
