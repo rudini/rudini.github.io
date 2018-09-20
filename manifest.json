@@ -39,7 +39,7 @@
     }
   ],
   "start_url": "/smarpay/?source=pwa",
-  "scope": "/smarpay/",
+  "scope": "https://rudini.github.io",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#804000",
