@@ -1,6 +1,6 @@
 //This is the service worker with the Cache-first network
 
-var CACHE = 'pwabuilder-precache-v5';
+var CACHE = 'pwabuilder-precache-v6';
 var precacheFiles = [
   '/',
   '/index.html?v=1234',
@@ -35,6 +35,7 @@ self.addEventListener('install', function(evt) {
 //allow sw to control of current page
 self.addEventListener('activate', function(event) {
   console.log('[PWA Builder] Claiming clients for current page');
+  console.log('claims', self.clients);
   return self.clients.claim();
 });
 
