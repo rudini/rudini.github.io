@@ -38,8 +38,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/smarpay/?source=pwa",
-  "scope": "/smarpay/",
+  "start_url": "/index.html",
+  "scope": ".",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#804000",
