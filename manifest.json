@@ -46,9 +46,5 @@
   "theme_color": "#804000",
   "description": "pay as you go",
   "dir": "ltr",
-  "lang": "de-CH",
-  "share_target": {
-    "action": "https://rudini.github.io",
-    "params": {}
-  }
+  "lang": "de-CH"
 }
